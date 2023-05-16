@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href=" https://fonts.cdnfonts.com/css/game " rel="stylesheet">
+
+    <title>Foto.png</title>
+
+    <style>
+        @import url(' https://fonts.cdnfonts.com/css/game ');
+    </style>
+
+
+
+    <Style>
+        @media (min-width: 768px) {
+            .vertical {
+                font-size: 20em !important;
+            }
+        }
+
+        body {
+            background-color: #000;
+            font-family: 'Teko', sans-serif;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: tomato;
+            width: 100%;
+            min-height: 100vh;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px white;
+            max-width: 500px;
+         
+        }
+
+        @keyframes animationDisplay {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+        }
+
+        .falante-all {
+            display: flex;
+            flex-direction: row;
+            margin: 15px 10px;
+        }
+
+        .circle-falante {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #000;
+            margin: 5px;
+            box-shadow: 2px 2px 1px #fff;
+        }
+
+
+
+        h1 {
+            font-family: 'GAME', sans-serif;
+            margin-bottom: 0;
+            align-self: center;
+            margin-left: 10px;
+            font-size: 1.3em;
+
+
+        }
+
+        .texto {
+            animation: animationDisplay 3s linear infinite;
+        }
+
+        .btn-box {
+            margin: 10px;
+            rotate: -30deg;
+            padding: 0;
+
+        }
+
+        button {
+
+            border-radius: 50%;
+            border: none;
+            font-weight: bold;
+            margin: 5px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.63);
+            font-size: 1.5em;
+            color: #fff;
+
+
+        }
+
+
+        .btn-sim {
+            background-color: rgb(48, 172, 48);
+            width: 23vw;
+            height: 23vw;
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        .btn-nao {
+            background-color: rgb(172, 48, 48);
+            max-width: 50px;
+            max-height: 50px;
+            width: 23vw;
+            height: 23vw;
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        button:hover {
+            box-shadow: 1px 1px 1px #fff;
+            opacity: .8;
+        }
+
+        .display {
+            display: flex;
+            overflow-y: auto;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            height: 40vh;
+            min-height: 40vh;
+            background-color: aquamarine;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 3em;
+            margin: 10px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.63);
+            color: rgb(27, 163, 118);
+        }
+
+        .display-container {
+            flex-direction: column;
+            display: flex;
+            height: 40vh;
+            align-items: center;
+            flex: 1;
+        }
+
+        .color {
+            color: #fff;
+        }
+
+        .vertical {
+            font-size: 50vw;
+
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.63);
+
+        }
+
+        .btn-all {
+            display: flex;
+            margin-top: 0;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            align-items: center;
+
+
+        }
+
+        .tomato {
+            align-self: flex-start;
+            color: tomato;
+            background-color: tomato;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            animation: animationDisplay .3s linear infinite;
+        }
+
+        .circle {
+            width: 10px;
+            height: 10px;
+            background-color: #1ba376;
+            border-radius: 50%;
+            margin: 2px;
+            animation: animationDisplay 1s linear infinite;
+        }
+
+        .circle-01 {
+            width: 10px;
+            height: 10px;
+            background-color: #1ba376;
+            border-radius: 50%;
+            margin: 2px;
+            animation: animationDisplay 1.2s linear infinite;
+        }
+
+        .circle-02 {
+            width: 10px;
+            height: 10px;
+            background-color: #1ba376;
+            border-radius: 50%;
+            margin: 2px;
+            animation: animationDisplay 1.3s linear infinite;
+        }
+
+        .circle-box {
+
+            display: flex;
+            flex-direction: row;
+            margin: 2px;
+            align-items: center;
+
+        }
+
+        .mussum {
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 10px;
+            animation: animationMussum 3s linear infinite;
+
+        }
+
+
+
+        @keyframes animationMussum {
+
+            0%,
+            100% {}
+
+            50% {
+                scale: 1.1;
+            }
+        }
+
+
+        .light-box {
+            display: flex;
+            width: 100%;
+            align-items: center;
+        }
+
+
+        .light {
+            margin: 10px;
+            width: 15px;
+            height: 15px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .result {
+            color: #fff;
+        }
+
+        .restart{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .restart ul{
+            display: flex;
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+        .restart ul li{
+            display: flex;
+            list-style: none;
+            margin:10px;
+            background-color:#808080;
+            border-radius: 15px;
+            width: 20%;
+            justify-content: center;
+            rotate: -20deg;
+            box-shadow: .5px .5px 1px #000;
+            
+        }
+
+        .restart ul li a{
+            text-decoration: none;
+            padding: 0 5px;
+            border-radius: 10px;
+            color: #fff;
+            
+        }
+
+        .restart ul li:hover{
+            box-shadow: .5px .5px 1px #fff;
+        }
+
+    </Style>
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="falante-box">
+            <div class="falante-all">
+                <div class="circle-falante"></div>
+                <div class="circle-falante"></div>
+                <div class="circle-falante"></div>
+            </div>
+        </div>
+        <h1><span class="color">Detector</span> de Mentiras</h1>
+        <div class="display">
+            <div class="display-container">
+                <div class="tomato"></div>
+                <p class="texto">Então você é DEV nutella?</p>
+                <div class="circle-box">
+                    <div class="circle"></div>
+                    <div class="circle-01"></div>
+                    <div class="circle-02"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="light-box">
+
+            <div class="light"></div>
+            <div class="result"></div>
+
+        </div>
+
+        <div class="restart">
+            <ul>
+                <li type="button">
+                    <a onclick="start()">Start</a>
+                </li>
+                <li type="button">
+                    <a onclick="restart()">Restart</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="btn-all">
+            <div class="vertical">+</div>
+            <div class="btn-box">
+                <Button onclick="sim()" class="btn-sim">Y</Button>
+                <Button onclick="nao()" class="btn-nao">N</Button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script>
+
+
+
+        function start(){
+            alert('Olá, para começar, clique nos botões ("Y" para Sim) e ("N" para não)')
+        }
+
+        function restart(){
+            window.location.reload()
+        }
+
+
+
+
+
+        let isTrue = false;
+
+        function sim() {
+            const light = document.querySelector('.light');
+            const texto = document.querySelector('.texto');
+            const resultado = document.querySelector('.result');
+
+
+            light.style.backgroundColor = '#00ff00';
+            light.style.boxShadow = '0px 0px 10px #ff0'
+            texto.innerHTML = '<div><img class="mussum" src="https://classic.exame.com/wp-content/uploads/2019/03/39186_0_gr.jpg?quality=70&strip=info&w=794" alt="imagem"></div>'
+            texto.style.animation = 'none';
+            texto.style.opacity = '.5';
+
+            resultado.innerText = 'Sucess'
+
+            isTrue;
+        }
+
+
+        let count = 0;
+        function nao() {
+            count += 1
+            const botaoNao = document.querySelector('.btn-nao');
+            if (count < 2 && isTrue !== true) {
+                const texto = document.querySelector('.texto');
+                const light = document.querySelector('.light');
+                const resultado = document.querySelector('.result');
+
+                light.style.backgroundColor = '#ff0000';
+                light.style.boxShadow = '0px 0px 10px #ff0000';
+
+
+
+                texto.style.animation = 'none';
+                texto.style.fontSize = '.8em';
+                texto.innerText = 'Reveja sua escolha';
+
+                botaoNao.style.width = '15px';
+                botaoNao.style.height = '15px';
+                botaoNao.style.fontSize = '5px';
+
+                resultado.innerText = 'Error';
+
+            }
+
+
+            else if (count === 2) {
+                const texto = document.querySelector('.texto');
+                texto.innerText = 'Você é bem insistente em, te darei somente esta chance, escolha com calma.';
+                const light = document.querySelector('.light');
+                const resultado = document.querySelector('.result');
+
+                light.style.backgroundColor = '#ff0000';
+                light.style.boxShadow = '0px 0px 10px #ff0000'
+
+
+                botaoNao.style.width = '15px';
+                botaoNao.style.height = '15px';
+                botaoNao.style.fontSize = '5px';
+                botaoNao.style.display = 'none';
+
+                resultado.innerText = 'Error';
+
+            }
+            else {
+                botaoNao.style.display = 'none';
+
+
+
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
